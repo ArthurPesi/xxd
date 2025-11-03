@@ -1,0 +1,4 @@
+#!/bin/bash
+target=main.c
+exec=${target%.*}
+clang --std=c99 -pedantic-errors -Wall -Werror $target -o $exec
